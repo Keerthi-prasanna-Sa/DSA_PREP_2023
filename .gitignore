@@ -1,0 +1,10 @@
+# Ignore all
+*
+# Unignore all with extensions
+!*.*
+# Unignore all dirs
+!*/
+# ignore all .idea folder
+*.idea
+# ignore all .vscode folder
+*.vscode
