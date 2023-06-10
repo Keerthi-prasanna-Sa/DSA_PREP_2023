@@ -8,3 +8,5 @@
 *.idea
 # ignore all .vscode folder
 *.vscode
+# ignore all .DS_store
+*.DS_store
