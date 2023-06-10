@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-bool LinearSearch(int nums[], int size, int key) {
+int LinearSearch(int nums[], int size, int key) {
     for(int i=0; i<size; i++){
         if (nums[i] == key) {
-            return true;
+            return i;
         }
     }
-    return false;
+    return -1;
 }
 
 int main() {
@@ -21,8 +21,9 @@ int main() {
     cout << "Enter the element to search: " << endl;
     cin >> key;
 
-    if (LinearSearch(nums, size, key) == 1) {
-        cout << "Element available in the array" << endl;
+    int position = LinearSearch(nums, size, key);
+    if (position != -1) {
+        cout << "Element available in the array and it is in the index " << position << endl;
     }
     else {
         cout << "Element not available in the array" << endl;
