@@ -30,7 +30,6 @@ int main() {
             break; 
         default:
             cout << "No day for this number";
-            break;
     }
 
 
